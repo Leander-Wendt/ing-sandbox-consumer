@@ -6,6 +6,6 @@ Code to consume the psd2 sandbox api provided by ing
 
 Run `sh getAuthToken.sh`
 
-Get the value of access token from the response body. Paste it into `psd2SandReqAuthUrl.sh`'s accessToken in line 27.
+Get the value of access token from the response body. Paste it into `psd2SendReqAuthUrl.sh`'s accessToken in line 27.
 
-Run `sh psd2SandReqAuthUrl.sh`
+Run `sh psd2SendReqAuthUrl.sh`
