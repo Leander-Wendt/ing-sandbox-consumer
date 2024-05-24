@@ -19,6 +19,7 @@ reqPath="/oauth2/token"
 
 # You can also provide scope parameter in the body E.g. "grant_type=client_credentials&scope=greetings%3Aview"
 # scope is an optional parameter. If you don't provide a scope, the accessToken is returned for all available scopes
+# &scope=payment-accounts%3Abalances%3Aview
 payload="grant_type=client_credentials"
 payloadDigest=`echo -n "$payload" | openssl dgst -binary -sha256 | openssl base64`
 digest=SHA-256=$payloadDigest
