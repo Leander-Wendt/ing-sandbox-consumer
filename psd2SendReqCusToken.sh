@@ -11,7 +11,7 @@
 
 keyId="5ca1ab1e-c0ca-c01a-cafe-154deadbea75" # client_id as provided in the documentation
 certPath="./certs/"  # path of the downloaded certificates and keys
-authorization_code="f8a4637baf38eb524c6292b8561e5344332e65fec799b742032a8193528838a2fa3bc4f3f674423c89ca56d8ef8cf4c8" # generated value of authorization code from the previous step.
+authorization_code="" # generated value of authorization code from the previous step.
 
 # URL encoded value of http://api.example.com
 redirect="http%3A%2f%2fapi.example.com%2f"
@@ -20,7 +20,7 @@ redirect="http%3A%2f%2fapi.example.com%2f"
 accessToken=""
 
 # AUTHORIZATION CODE MUST BE PROVIDED AS A VALUE TO THE "code" PARAMETER IN THE PAYLOAD.
-payload="grant_type=authorization_code&code=$authorization_code&redirect_uri=$redirect"
+payload="grant_type=authorization_code&code=$authorization_code"
 payloadDigest=`echo -n "$payload" | openssl dgst -binary -sha256 | openssl base64`
 digest=SHA-256=$payloadDigest
 
